@@ -1,0 +1,72 @@
+.my-resume {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgba(189, 251, 4, 1);
+    color: #000000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 11px;
+}
+
+.header li {
+    margin-bottom: 5px;
+    line-height: 1;
+    font-size: 11px;
+}
+
+.header .contact-info {
+    font-weight: bold;
+}
+
+.section {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.section p {
+    margin-bottom: 5px;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-size: 11px;
+}
