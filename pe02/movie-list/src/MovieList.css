@@ -1,0 +1,77 @@
+.movie-list-container {
+    background-image: url("./images/image.webp");
+    background-repeat: no-repeat;
+    background-size: 155% ;
+    padding: 90px 90px 90px 80px;
+    color:white;
+    font-size: 15px;
+    margin-top: 0;
+    text-align: left;
+    list-style-type: none; 
+  }
+  
+  .movie-list-container h2 {
+    margin-bottom: 20px;
+    padding: 2px;
+    color: yellow;
+  }
+  
+  .movie-list-container label {
+    display: block;
+    margin-bottom: 1px;
+    padding: 5px;
+    border-color: rgb(9, 97, 97);
+    font-size: 18px; 
+  }
+  
+  
+  .movie-list-container select {
+    margin-left: 0px;
+  }
+  .movie-list-container ul {
+    margin-left: 2px;
+    list-style-type: none; 
+    padding-left: 0%;
+    font-weight:25;
+   font-size: small;
+
+
+  }
+  
+  .movie {
+    margin-bottom: 5px; /* Decrease the margin */
+    padding: 5px; /* Decrease the padding */
+    background-color: #0c0c14;
+    border: 1px solid rgb(195, 27, 27);
+    cursor: pointer;
+  }
+  
+  
+  .movie:hover {
+    background-color: #0c0736;
+  }
+  
+  .movie-details {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+   
+  }
+  
+  .movie-title {
+    color: rgb(172, 49, 8);
+    margin-top: 0;
+    font-size: medium;
+  }
+  
+  .movie-genre,
+  .movie-releaseYear {
+    color:yellow;
+    margin: 0;
+    font-weight: lighter;
+    font-size: medium;
+  }
+  .movie-title .title-label {
+    color: yellow;
+    font-size: medium;
+  }
