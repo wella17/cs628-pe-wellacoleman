@@ -1,0 +1,320 @@
+/* Reset default margin and padding
+body, h1, h2, ul, li, p, form {
+  margin: 0;
+  padding: 0;
+} */
+html {
+  height: 100%; /* Set html element's height to 100% */
+}
+
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern font style */
+  margin: 0; /* Remove margin to prevent extra spacing */
+  padding: 0;
+  background: url('./city.png'); /* Path to your image file */
+  background-size: cover; /* Cover the entire page with the background image */
+  background-repeat:no-repeat; /* Repeat the background image to create the moving effect */
+  animation: movingBackground 20s linear infinite; /* Apply the animation to the background */
+}
+
+@keyframes movingBackground {
+  from {
+    background-position: 0 0; /* Start from the top-left corner */
+  }
+  to {
+    background-position: 100%; /* Move to the bottom-right corner */
+  }
+}
+
+.container {
+  max-width: 300px; /* Decreased the max-width */
+  margin: 0rem 0 0 0rem; /* Adjusted the margin for top and left */
+  padding: 10px; /* Added "px" unit to padding value */
+  background-color: #100303;
+  border-radius: 1px;
+  box-shadow: 0 2px 4px rgba(171, 31, 31, 0.1);
+  position: fixed; /* Changed to "fixed" to position the container relative to the viewport */
+  top: 30%; /* Position from the top at 50% */
+  left: 20%;
+ /* Position from the left at 50% */
+  transform: translate(-40%, -30%); /* Center the container both horizontally and vertically */
+  /* bottom: 70px; */ /* Removed the bottom positioning */
+}
+
+
+h1 {
+  color: #f0e9ed;
+  font-size: 30px;
+  margin: 0rem;
+  padding: 0;
+}
+.container h1 {
+  font-size: 30px; /* Adjust the value as needed */
+  margin: 1rem;
+}
+nav {
+  margin-top: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 2;
+  display: flex;
+  margin-right: 20px;
+}
+
+nav li {
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #100202;
+  background-color: #34be80;
+  padding: 10px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  margin: 1px;
+}
+
+nav a:hover {
+  background-color: #a34c66;
+  color: #090101;
+  border-bottom: 2px solid #090101; 
+}
+
+.cities-list {
+  margin-top: 10px;
+}
+
+.cities-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cities-list li {
+  margin-bottom: 110px;
+}
+
+.add-city {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  margin-right: 1px;
+  width: 100px; /* Increased width for better alignment */
+  color: #edecf5; /* Changed label text color */
+  font-size: 18px;
+}
+
+.form-group input {
+  flex:0 ;
+  padding: 10px;
+  border: 1px solid #f1e8e8;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.form-group button {
+  background-color: #f4dddd;
+  color: rgb(207, 14, 14);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.form-group button:hover {
+  background-color: #2a2626;
+}
+
+.city-details {
+  margin-top: 1px;
+  color: rgb(231, 220, 220);
+ 
+ 
+}
+city-details h1 {
+  color: #c917a5;
+  padding: 10;
+  
+ 
+}
+
+
+.city-details h2 {
+  color: #c917a5;
+
+}
+
+.city-details p {
+  color: rgb(236, 223, 223);
+  margin-top: 1px;
+  padding: 0;
+  
+}
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 5rem;
+  }
+
+ 
+  h1 {
+    font-size: 24px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .form-group label {
+    width: 80px;
+    font-size: 16px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+  }
+
+  .form-group button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin: 3rem;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .form-group label {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .form-group input {
+    font-size: 12px;
+  }
+
+  .form-group button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
+
+.add-city {
+  margin-top: 2px;
+}
+
+.rounded-box {
+  background-color: #1e2030;
+  border-radius: 10px;
+  padding: 5px 5px 5px 3px;
+  box-shadow: 0 2px 4px rgba(195, 139, 139, 0.1);
+  max-width: 300px; /* Decreased the max-width */
+}
+.city-not-found {
+  color: #f7f0f3;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.add-city h2 {
+  color: rgb(157, 16, 65);
+  padding: 0;
+}
+
+/* AddCity.css */
+h1 {
+  color: rgb(233, 233, 242);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1px;
+}
+
+.cities-list-container {
+  display:felx; /* Use flexbox to arrange the elements */
+  align-items:self-start /* Align items to the top */
+}
+
+.cities-list-heading {
+  padding-top: 40px; /* Adjust the padding as needed */
+  margin-right: auto; /* Push the heading to the left side */
+}
+
+.city-details-link {
+  font-size: 14px;
+  color: rgb(131, 9, 95);
+  text-decoration: none;
+}
+
+.city-details-link:hover {
+  text-decoration: underline;
+}
+
+/* App.css */
+.city-details-link-container {
+  border: 1px solid #edd8d8;
+  padding: 5px; /* Adjust the padding to your preferred size */
+  border-radius: 2px;
+  background-color: #f3ebeb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.city-details-link {
+  font-size: 15px;
+  color: rgb(250, 250, 252);
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 10;
+  cursor: pointer;
+}
+/* Add this to your App.css file or your preferred CSS file */
+/* Add this to your App.css file or your preferred CSS file */
+.container {
+  /* Your existing container styles */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #0b1185;
+  color: rgb(244, 241, 237);
+  text-align: center;
+  padding: 1px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.city-details {
+  margin-left: 25px; /* Adjust the value as needed */
+}
