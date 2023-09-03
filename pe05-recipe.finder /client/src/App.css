@@ -1,0 +1,312 @@
+/* App styles */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  /* Add top padding to create space between navbar and content */
+  padding-top: 7px; 
+  /* Adjust this value as needed */
+  min-height: 100vh; /* Set the minimum height to cover the whole viewport */
+  margin: 0; /* Remove any default margin */
+  overflow: hidden; /* Prevent content overflow */
+}
+body {
+  background-image: url("https://www.medibank.com.au/content/dam/livebetter/en/images/migrated/324538f6338f4a575843949de2a7d960/healthy-cooking.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Welcome message styles */
+.welcome-message {
+  font-size: 1.2rem;
+  margin: 20px 0 10px; /* Adjust the margin as needed */
+  padding: 30px;
+  color: gold; /* Change the color to gold */
+  font-style: italic;
+}
+
+/* Navbar styles */
+.navbar {
+  .navbar {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(48, 144, 11); /* Change the background color to gold */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(222, 233, 222); /* Set the text color to white */
+    text-decoration: none;
+    padding: 0 10px;
+    position: fixed;
+    font-weight: bolder;
+    font-size:large;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure the navbar appears above other content */
+  }
+}
+.welcome-container {
+  background-color: rgba(249, 234, 234, 0.7); /* Transparent white background */
+/* Add some padding to the container */
+  margin-top: 60px; /* Add margin to the top to create space between the container and the navbar */
+  border-radius: 5px;
+  margin-right: 20px ; 
+  margin-left: 20px;
+  margin-bottom: 20px;
+  /* Add border-radius for a rounded look */
+}
+.welcome-message {
+  color: rgb(16, 6, 6); 
+  padding: 0%;/* Set the text color to black */
+}
+
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgb(243, 235, 240);
+  padding: 1px;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(35, 24, 24, 0.1);
+  min-height: 400px; /* Set a minimum height to ensure visibility */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+}
+.image-url {
+  max-width: 100%; /* Set the maximum width to the container width */
+  height:20px;    /* Automatically adjust the height to maintain aspect ratio */
+  /* You can also set a specific width and height if needed */
+}
+.image img {
+  max-width: 20%; /* Set the maximum width to 100% */
+  height: auto;
+  margin-bottom: 10px;
+}
+.create-recipe {
+  width: 100%;
+  max-width: 600px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.create-recipe h2 {
+  text-align: center;
+  margin-bottom: 2px;
+  font-weight: bolder;
+  color: rgb(2, 2, 12);
+  
+}
+
+.create-recipe label {
+  display: block;
+  font-weight:bolder;
+  margin-bottom: 5px;
+  font-size:large;
+  color: rgb(10, 10, 0); /* Label color */
+}
+
+.create-recipe input[type="text"],
+.create-recipe textarea,
+.create-recipe input[type="number"] {
+  width: 100%;
+  padding: 1px;
+  margin-bottom: 1%;
+  border: 1px solid #120202;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.create-recipe button.create-recipe-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 1px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.create-recipe button.create-recipe-button:hover {
+  background-color: darkblue;
+}
+
+.recipe {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recipe-name-actions {
+  display: flex;
+  align-items: center;
+}
+
+.recipe-actions a,
+.recipe-actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: rgb(237, 227, 227);
+}
+
+.recipe-actions a {
+  background-color: rgb(22, 25, 218);
+  text-decoration: none;
+}
+
+.recipe-actions button {
+  background-color: rgb(220, 49, 49);
+  border: none;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .create-recipe {
+    width: 90%;
+    margin: 1px auto;
+  }
+}
+/* Recipe action styles */
+.recipe-actions {
+  display: flex;
+  gap: 20x; /* Add some spacing between the Edit and Delete buttons */
+}
+
+/* Edit Recipe container styles */
+.edit-recipe-container {
+  background-color: rgb(241, 236, 236);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 40px auto; /* Added margin and centered horizontally */
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a maximum width if desired */
+  position: relative;
+  top: 20px; /* Adjust the top value to give space from the top */
+  bottom: 20px; /* Adjust the bottom value to create space from the bottom */
+  height: calc(80vh - 80px); /* Calculate the height minus navbar height */
+  overflow-y: scroll;
+}
+
+
+/* Form label styles */
+.edit-recipe-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Form input styles */
+.edit-recipe-container input,
+.edit-recipe-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Form button styles */
+.edit-recipe-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Form button styles on hover */
+.edit-recipe-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Responsive styles */
+@media screen and (max-width: 768px) {
+  .edit-recipe-container {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+/* RecipeDetails.css (or any other CSS file you prefer) */
+
+.container {
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-title {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+.recipe-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.recipe-details p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.recipe-details img {
+  max-width: 50%;
+  height: auto;
+  margin-top: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
